@@ -1,20 +1,18 @@
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
-    var person1Input = $("input#person1").val();
-    var person2Input = $("input#person2").val();
-    var animalInput= $("input#animal").val();
-    var exclamationInput = $("input#exclamation").val();
-    var verbInput = $("input#verb").val();
-    var nounInput = $("input#noun").val();
+    var yourNameInput = $("input#yourName").val();
+    var dateInput = $("input#date").val();
+    var startTimeInput= $("input#startTime").val();
+    var endTimeInput = $("input#endTime").val();
+    var commentsInput = $("input#comments").val();
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
+    $(".yourName").text(yourNameInput);
+    $(".date").text(dateInput);
+    $(".startTime").text(startTimeInput);
+    $(".endTime").text(endTimeInput);
+    $(".comments").text(commentsInput);
 
-    $("#story").show();
+    $("#confirmation").show();
 
     event.preventDefault();
   });
