@@ -33,10 +33,20 @@
             <input id="comments" class="form-control" type="text">
           </div>
 
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-group">
+            <label for="beverage">Beverage!</label>
+            <select class="form-control" id="beverage">
+              <option value="coffee">Coffee</option>
+              <option value="tea">Tea</option>
+              <option value="kombucha">Kombucha</option>
+              <option value="water">Water</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-info">Submit</button>
         </form>
       </div>
-
+      <br>
       <div id="confirmation">
         <h1>Booking confirmation:</h1>
         <p>Name: <span class="yourName"></span></p>
@@ -44,6 +54,7 @@
         <p>Start Time: <span class="startTime"></span></p>
         <p>End Time: <span class="endTime"></span></p>
         <p>Your Comments: <span class="comments"></span></p>
+        <p>Your Beverage: <span id="beverage"></span></p>
       </div>
 
     </div>
